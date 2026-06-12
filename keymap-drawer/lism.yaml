@@ -8,7 +8,7 @@ layers:
   - T
   - Y
   - U
-  - I
+  - {t: I, h: arrow}
   - O
   - P
   - A
@@ -106,7 +106,7 @@ layers:
   - '='
   - Gui+$$mdi:arrow-left-bold$$
   - Alt+$$mdi:arrow-left-bold$$
-  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:arrow-up-bold$$', type: held}
   - Alt+$$mdi:arrow-right-bold$$
   - Gui+$$mdi:arrow-right-bold$$
   - '*'
@@ -136,7 +136,7 @@ layers:
   - LANG2
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - $$mdi:arrow-up-bold$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
