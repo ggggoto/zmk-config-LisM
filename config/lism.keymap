@@ -54,7 +54,7 @@
 &kp Q         &kp W       &kp E           &kp R           &kp T                                             &kp Y            &kp U           &kp I            &kp O       &kp P
 &kp A         &mt LALT S  &mt LSHIFT D    &mt LGUI F      &mt LCTRL G                                       &mt RCTRL H      &mt RGUI J      &mt RSHIFT K     &mt RALT L  &lt 3 ENTER
 &kp Z         &kp X       &kp C           &kp V           &kp B                                             &kp N            &kp M           &mkp MB1         &mkp MB2    &kp SLASH
-&lt 4 DELETE  &tog 1      &lt 1 TAB       &msc SCRL_UP    &lt 2 SPACE      &lt 3 LANGUAGE_2    &lt 3 LANG1  &lt 2 BACKSPACE  &msc SCRL_UP    &kp F7           &kp F10     &lt 4 ESCAPE
+&lt 4 DELETE  &trans      &lt 1 TAB       &msc SCRL_UP    &lt 1 SPACE      &lt 3 LANGUAGE_2    &lt 3 LANG1  &lt 2 BACKSPACE  &msc SCRL_UP    &trans           &trans      &lt 4 ESCAPE
                           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT                                   &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_RIGHT
             >;
 
@@ -62,18 +62,18 @@
         };
 
         layer_1 {
-            display-name = "Mouse Layer";
+            display-name = "symbol";
             bindings = <
-&trans    &trans  &trans  &trans  &trans                    &kp SPACE     &kp RG(LEFT)  &kp RG(RIGHT)  &mkp MB3      &trans
-&mkp MB5  &trans  &trans  &trans  &trans                    &kp LG(UP)    &mkp MB1      &mkp MB2       &msc SCRL_UP  &msc SCRL_DOWN
-&mkp MB4  &trans  &trans  &trans  &trans                    &kp LG(DOWN)  &kp LEFT      &kp UP         &kp RIGHT     &trans
-&trans    &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &kp DOWN       &trans        &kp LG(W)
-                  &trans  &trans  &trans                    &trans        &trans        &trans
+&kp PERCENT  &kp DOLLAR  &kp AMPERSAND  &kp CARET        &kp SLASH                          &kp BACKSLASH   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN  &kp GREATER_THAN
+&kp AT_SIGN  &kp HASH    &kp ASTERISK   &kp PLUS         &kp EQUAL                          &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp COLON
+&kp GRAVE    &kp TILDE   &kp MINUS      &kp EXCLAMATION  &kp QUESTION                       &kp PIPE        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT        &kp DOUBLE_QUOTES
+&trans       &trans      &trans         &trans           &trans        &trans    &kp COMMA  &kp PERIOD      &trans                &trans                 &trans         &kp ESCAPE
+                         &trans         &trans           &trans                             &trans          &trans                &trans
             >;
         };
 
         layer_2 {
-            display-name = "Number Layer";
+            display-name = "arrow";
             bindings = <
 &trans        &kp NUMBER_7       &kp NUMBER_8         &kp NUMBER_9       &kp EQUAL                          &kp LG(LEFT_ARROW)          &kp LA(LEFT_ARROW)      &kp UP_ARROW    &kp LA(RIGHT_ARROW)      &kp LG(RIGHT_ARROW)
 &kp ASTERISK  &mt LALT NUMBER_4  &mt LSHIFT NUMBER_5  &mt LGUI NUMBER_6  &mt LCTRL MINUS                    &kp LS(LC(TAB))             &kp LEFT                &kp DOWN_ARROW  &kp RIGHT                &kp LC(TAB)
@@ -86,13 +86,13 @@
         };
 
         layer_3 {
-            display-name = "Mark Layer";
+            display-name = "NUM";
             bindings = <
-&kp LS(LG(N4))  &kp F4   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none                        &kp TILDE  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH           &kp DOLLAR
-&emoji          &kp F5   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none                        &kp GRAVE  &kp UNDER        &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp BACKSLASH
-&kp KP_NUMLOCK  &kp F11  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none                        &kp PIPE   &kp PERCENT      &kp CARET         &kp AMPERSAND      &kp ASTERISK
-&trans          &trans   &kp NUMBER_0          &trans                 &kp SPACE  &trans    &trans  &kp ENTER  &trans           &none             &none              &kp F12
-                         &trans                &trans                 &trans                       &trans     &trans           &trans
+&kp C_VOLUME_UP       &kp F9  &kp F10  &kp F11  &kp F12                    &kp N7        &kp N8        &kp N9        &kp PLUS      &kp MINUS
+&kp C_VOL_DN          &kp F5  &kp F6   &kp F7   &kp F8                     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &kp SLASH
+&kp LS(LG(NUMBER_4))  &kp F1  &kp F2   &kp F3   &kp F4                     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &trans
+&trans                &trans  &trans   &trans   &trans   &trans    &trans  &kp N0        &trans        &none         &none         &trans
+                              &trans   &trans   &trans                     &trans        &trans        &trans
             >;
         };
 
